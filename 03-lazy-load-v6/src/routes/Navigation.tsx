@@ -17,7 +17,7 @@ export const Navigation = () => {
 					<ul>
 						<li>
 							<NavLink
-								to="/"
+								to="/lazy1"
 								className={({isActive}) => (isActive ? "nav-active" : "")}
 							>
 								Home
@@ -25,7 +25,7 @@ export const Navigation = () => {
 						</li>
 						<li>
 							<NavLink
-								to="/about"
+								to="/lazy2"
 								className={({isActive}) => (isActive ? "nav-active" : "")}
 							>
 								About
@@ -33,7 +33,7 @@ export const Navigation = () => {
 						</li>
 						<li>
 							<NavLink
-								to="/contact"
+								to="/lazy3"
 								className={({isActive}) => (isActive ? "nav-active" : "")}
 							>
 								Users
