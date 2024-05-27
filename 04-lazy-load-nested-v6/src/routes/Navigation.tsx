@@ -29,15 +29,17 @@ export const Navigation = () => {
 						))}
 					</ul>
 				</nav>
+				{/* All components into Suspense should be exported like default, because it will a wrong in the lazy load */}
 				<Suspense fallback={<div>Loading...</div>}>
 					<Routes>
-						{routes.map((route) => (
-							<Route
-								key={route.to}
-								path={route.path}
-								element={<route.Component />}
-							/>
-						))}
+						{routes
+							.map((route) => (
+								<Route
+									key={route.to}
+									path={route.path}
+									element={<route.Component />}
+								/>
+							))}
 						<Route
 							path="*"
 							element={<Navigate to={routes[0].to} replace />}

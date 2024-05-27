@@ -5,5 +5,5 @@ import  LazyPage3 from "./LazyPage3";
 export {
   LazyPage1,
   LazyPage2,
-  LazyPage3
+  LazyPage3,
 }
